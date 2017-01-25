@@ -3,157 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mars</title>
+        <title>NAVA</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"/>
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="header">
+        <header>
             <div class="container-fluid">
-                    <div class="logo-phone pull-left">
-                        <a class="logo hvr-ripple-out" href="#">
-                            <span>MARS</span>
-                            <div></div>
-                        </a>
-                        <a href="tel:+48604300500" class="gray-text phone">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <span>+48 604 300 500</span>
+                <div class="row d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="hidden-md-down" src="img/logo.png">
+                            <img class="hidden-lg-up" src="img/small-logo.png">
                         </a>
                     </div>
-                <div class="buy-menu pull-right">
-                    <a href="#"><i class="fa fa-shopping-cart text-white hidden-sm-up" aria-hidden="true"></i></a>
-                    <a class="buy-now hvr-underline-from-left text-white hidden-xs-down" href="#">BUY NOW</a>
-                    <div class="pull-right">
-                        <button class="hamburger">&#9776;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row welcome-section">
-            <div class="menu">
-                <ul>
-                    <a href="#"><li>LINK ONE</li><button class="cross">&#735;</button></a>
-                    <a href="#"><li>LINK TWO</li></a>
-                    <a href="#"><li>LINK THREE</li></a>
-                    <a href="#"><li>LINK FOUR</li></a>
-                    <a href="#"><li>LINK FIVE</li></a>
-                </ul>
-            </div>
-            <div class="col-md-7 col-sm-12 background-gray scroll-down full-height flex">
-                <ul class="slider-dots">
-                    <li class="active-dot"><i class="fa fa-circle" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-                </ul>
-                <div class="slider">
-                        <ul class="slider-content">
-                            <li>
-                                <h2>PHANTOM</h2>
-                                <p class="gray-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                            </li>
-                            <li class="display-none">
-                                <h2>PHANTOM 2</h2>
-                                <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                            </li>
-                            <li class="display-none">
-                                <h2>PHANTOM 3</h2>
-                                <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                            </li>
-                            <li class="display-none">
-                                <h2>PHANTOM 4</h2>
-                                <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                            </li>
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="#">top destinations</a></li>
+                            <li><a href="#">add your boat</a></li>
+                            <li class="sing-up"><a href="#">sing up</a></li>
                         </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="col-md-5 hidden-sm-down mars-text red-section full-height"></div>
-            <div class="drone"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 padding-left-right-none">
-                    <div class="padding-left-right-none tap-to-fly-section background-light-gray flex flex-column">
-                        <div class="flex flex-column">
-                            <h2>Tap to fly</h2>
-                            <span class="gray-text">Lorem ipsum dolor sit amet.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fly-higher-section col-md-8 padding-left-right-none">
-                    <div class="dark-section d-inline-block">
-                        <h2 class="text-white">Fly higher then before</h2>
-                    </div>
-                    <button class="btn btn-white text-black text-uppercase">view more</button>
-                </div>
-            </div>
-        </div>
-        <section class="features-section container-fluid text-center">
-            <h3>Features</h3>
-            <div class="row margin-none">
-                <div class="col-sm-6 col-md-3 rotate">
-                    <img src="img/new-technology.png">
-                    <p>New technology</p>
-                </div>
-                <div class="col-sm-6 col-md-3 pulse">
-                    <img src="img/good-signal.png">
-                    <p>Good signal</p>
-                </div>
-                <div class="col-sm-6 col-md-3 hvr-wobble-top">
-                    <img src="img/easy-to-use.png">
-                    <p>Easy to use</p>
-                </div>
-                <div class="col-sm-6 col-md-3 hvr-buzz">
-                    <img src="img/visibility.png">
-                    <p>Visibility</p>
+        </header>
+        <section class="banner">
+            <video loop autoplay muted class="video">
+                <source src="video/sea.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="video/sea.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            </video>
+            <div class="banner-content">
+                <h1 class="text-white">RESERVE A BOAT NOW!</h1>
+                <h2 class="text-white">and set your sails into paradise!</h2>
+                <div class="search">
+                    <input placeholder="WHAT IS YOUR DESTINATION, SAILOR?" type="text">
+                    <button class="text-white"><img src="img/boat-ico.png">FIND A BOAT</button>
                 </div>
             </div>
         </section>
-        <section class="container-fluid padding-left-right-none">
-            <div class="row margin-none">
-                <div class="col-md-6 controller padding-left-right-none">
-                    <img src="img/controler.png">
-                </div>
-                <div class="col-md-6 bg-dark new-gen">
-                    <h1 class="text-white ng-title">New <span class="text-danger">generation</span> of vision<span class="text-danger">.</span></h1>
-                    <p class="text-white ng-toggle-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <button class="btn btn-transparent text-uppercase ng-show-text">view more</button>
-                </div>
+        <section class="numbers">
+            <div class="container-fluid">
+
             </div>
+
         </section>
-        <section class="container-fluid padding-left-right-none">
-            <div class="row margin-none">
-                <div class="col-md-6 new-f">
-                    <h1 class="text-black nf-title">New <span class="text-danger">generation</span> of flying<span class="text-danger">.</span></h1>
-                    <p class="text-black nf-toggle-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <button class="btn btn-transparent text-black text-uppercase nf-show-text">view more</button>
-                </div>
-                <div class="col-md-6 hidden-sm-down new-f-img">
-                    <img src="img/drone.png">
-                </div>
-            </div>
-        </section>
-        <section class="container-fluid padding-left-right-none">
-            <div class="row margin-none">
-                <div class="col-12 journey-section text-center">
-                    <h1 class="text-white j-title">Start your journey.</h1>
-                    <p class="text-white j-toggle-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <button class="btn text-ocean text-uppercase j-show-text">view more</button>
-                </div>
-            </div>
-        </section>
-        <footer class="text-center">
-            <div class="logo-rights d-inline-block">
-                <a class="logo hvr-ripple-out" href="#">
-                    <span>MARS</span>
-                    <div></div>
-                </a>
-                <p class="gray-text">2016 Copyright. All rights reserved by Symu.co</p>
-            </div>
-        </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
     </body>
