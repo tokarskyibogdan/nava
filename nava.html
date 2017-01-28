@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NAVA</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"/>
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400,700" rel="stylesheet">
@@ -13,11 +12,11 @@
     <body>
         <header>
             <div class="container-fluid">
-                <div class="row d-flex justify-content-between">
+                <div class="row d-flex justify-content-md-between justify-content-sm-center">
                     <div class="logo">
                         <a href="#">
                             <img class="hidden-md-down" src="img/logo.png">
-                            <img class="hidden-lg-up" src="img/small-logo.png">
+                            <img class="hidden-lg-up hidden-sm-down" src="img/small-logo.png">
                         </a>
                     </div>
                     <nav>
@@ -31,15 +30,16 @@
             </div>
         </header>
         <section class="banner">
-            <video loop autoplay muted class="video">
-                <source src="video/sea.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                <source src="video/sea.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <video loop autoplay muted class="video-top hidden-md-down">
+                <source src="video/sea.mp4" type='video/mp4'>
+                <source src="video/sea.ogv" type='video/ogg'>
+                <source src="video/sea.webm" type='video/webm'>
             </video>
             <div class="banner-content">
                 <h1 class="text-white">RESERVE A BOAT NOW!</h1>
                 <h2 class="text-white">AND SET YOUR SAILS INTO PARADISE!</h2>
                 <div class="search">
-                    <input placeholder="WHAT IS YOUR DESTINATION, SAILOR?" type="text">
+                    <input class="search-field" placeholder="WHAT IS YOUR DESTINATION, SAILOR?" type="text">
                     <button class="red-btn text-white"><img src="img/boat-ico.png">FIND A BOAT</button>
                 </div>
             </div>
@@ -49,19 +49,19 @@
                 <div class="row numbers">
                     <div class="col-6 col-sm-3">
                         <h2>2,300</h2>
-                        <p class="text-gray">Destinations</p>
+                        <p class="text-gray number-caption">Destinations</p>
                     </div>
                     <div class="col-6 col-sm-3">
                         <h2>1,000</h2>
-                        <p class="text-gray">Cities</p>
+                        <p class="text-gray number-caption">Cities</p>
                     </div>
                     <div class="col-6 col-sm-3">
                         <h2>35,000</h2>
-                        <p class="text-gray">Boats</p>
+                        <p class="text-gray number-caption">Boats</p>
                     </div>
                     <div class="col-6 col-sm-3">
                         <h2>50,000</h2>
-                        <p class="text-gray">Sailors</p>
+                        <p class="text-gray number-caption">Sailors</p>
                     </div>
                 </div>
             </div>
@@ -72,70 +72,255 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <div class="row">
                     <div class="col-8 large-desti">
+                      <div class="black-hover">
                         <img src="img/dest-1.png">
                         <button class="text-white red-btn"><img src="img/boat-ico.png">730</button>
                         <div class="img-caption text-white">
                             <h2>Figueira da Foz</h2>
                             <p>Portugal</p>
                         </div>
+                      </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-2.png">
-                        <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
-                        <div class="img-caption text-white">
-                            <h2>Ibiza</h2>
-                            <p>Spain</p>
+                        <div class="black-hover">
+                            <img src="img/dest-2.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <img src="img/dest-3.png">
-                        <button class="text-white red-btn"><img src="img/boat-ico.png">543</button>
-                        <div class="img-caption text-white">
-                            <h2>Palma de Mallorca</h2>
-                            <p>Spain</p>
+                        <div class="black-hover">
+                            <img src="img/dest-3.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Palma de Mallorca</h2>
+                                <p>Spain</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-4.png">
-                        <button class="text-white red-btn"><img src="img/boat-ico.png">495</button>
-                        <div class="img-caption text-white">
-                            <h2>Portofino</h2>
-                            <p>Italy</p>
+                        <div class="black-hover">
+                            <img src="img/dest-4.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Portofino</h2>
+                                <p>Italy</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-5.png">
-                        <button class="text-white red-btn"><img src="img/boat-ico.png">495</button>
-                        <div class="img-caption text-white">
-                            <h2>Port Hercules</h2>
-                            <p>Monaco</p>
+                        <div class="black-hover">
+                            <img src="img/dest-5.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Port Hercules</h2>
+                                <p>Monaco</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row d-none">
                     <div class="col-4">
-                        <img src="img/dest-3.png">
+                        <div class="black-hover">
+                            <img src="img/dest-3.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-4.png">
+                        <div class="black-hover">
+                            <img src="img/dest-4.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-5.png">
+                        <div class="black-hover">
+                            <img src="img/dest-5.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-none">
                     <div class="col-4">
-                        <img src="img/dest-3.png">
+                        <div class="black-hover">
+                            <img src="img/dest-3.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="img/dest-4.png">
+                        <div class="black-hover">
+                            <img src="img/dest-4.png">
+                            <button class="text-white red-btn"><img src="img/boat-ico.png">621</button>
+                            <div class="img-caption text-white">
+                                <h2>Ibiza</h2>
+                                <p>Spain</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button class="more-desti">EXPLORE MORE DESTINATIONS</button>
             </div>
         </section>
+        <section class="own-boat text-white">
+            <video loop autoplay muted class="video hidden-md-down">
+                <source src="video/sea2.mp4" type='video/mp4'>
+                <source src="video/sea2.ogv" type='video/ogg'>
+                <source src="video/sea2.webm" type='video/webm'>
+            </video>
+            <div class="own-boat-conent">
+                <h1>HAVE YOUR OWN BOAT?</h1>
+                <h2>NAVIGARE NECESSE EST, VIVERE NOT EST NECESSE</h2>
+                <button class="red-btn text-white">MAKE MONEY WITH YOUR BOAT</button>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid featured-boats">
+                <h2>FEATURED BOATS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-1.png">
+                            <button class="text-white red-btn">€580 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Delphia 47</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk, Poland<i class="fa fa-user" aria-hidden="true"></i> 8 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-2.png">
+                            <button class="text-white red-btn">€950 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Sense 55</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Portofino, Italy<i class="fa fa-user" aria-hidden="true"></i> 12 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-3.png">
+                            <button class="text-white red-btn">€820 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Crusier 51</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Palma de Mallorca, Spain<i class="fa fa-user" aria-hidden="true"></i> 10 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-4.png">
+                            <button class="text-white red-btn">€400 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Crusier 41S</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Lisbon, Portugal<i class="fa fa-user" aria-hidden="true"></i> 8 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-1.png">
+                            <button class="text-white red-btn">€580 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Delphia 47</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk, Poland<i class="fa fa-user" aria-hidden="true"></i> 8 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-2.png">
+                            <button class="text-white red-btn">€950 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Sense 55</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Portofino, Italy<i class="fa fa-user" aria-hidden="true"></i> 12 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-3.png">
+                            <button class="text-white red-btn">€820 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Crusier 51</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Palma de Mallorca, Spain<i class="fa fa-user" aria-hidden="true"></i> 10 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="black-hover">
+                            <img src="img/boat-4.png">
+                            <button class="text-white red-btn">€400 / day </button>
+                            <div class="img-caption text-white">
+                                <h2>Crusier 41S</h2>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Lisbon, Portugal<i class="fa fa-user" aria-hidden="true"></i> 8 Berths</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="more-boats">LOAD MORE BOATS</button>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid footer-content text-white">
+                <div class="row">
+                    <div class="col-2 footer-locations">
+                        <h6>TOP LOCATIONS</h6>
+                        <p>Lorem ipsum dolor Sit amet consectetur Adipisicing elit Eiusmod tempor Incididunt ut labore</p>
+                    </div>
+                    <div class="col-2 footer-boats">
+                        <h6>FEATURED BOATS</h6>
+                        <p>Lorem ipsum dolor Sit amet consectetur Adipisicing elit Eiusmod tempor</p>
+                    </div>
+                    <div class="col-5 footer-subscribe">
+                        <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                        <div class="subscribe">
+                            <input placeholder="Your email adress" type="text">
+                            <button class="red-btn text-white">SUBSCRIBE</button>
+                        </div>
+                        <ul class="social-buttons">
+                            <li><a href="#">
+                                <div class="btn btn-circle fb-btn"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                            <li><a href="#">
+                                <div class="btn btn-circle tw-btn"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                            <li><a href="#">
+                                <div class="btn btn-circle gl-btn"><i class="fa fa-google-plus" aria-hidden="true"></i></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 pull-right footer-contacts">
+                        <h6>CONTACT US</h6>
+                        <p>Lorem ipsum dolor Sit amet consectetur Adipisicing elit Eiusmod tempor Incididunt ut labore</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
     </body>
